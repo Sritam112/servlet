@@ -17,7 +17,7 @@ public void doGet(HttpServletRequest req,HttpServletResponse res)throws ServletE
 			pw.println("<h1 style='color:red;text-align='center'>Mr/Miss/Mrs."+name+" u r not elgible to vote</h1>" );
 			else
 			pw.println("<h1 style='color:green;text-align='center'>Mr/Miss/Mrs."+name+" u r  elgible for voting</h1>" );
- pw.println("<a href='http://localhost:3030/VOTER/form.html'></a>");
+ pw.println("<a href='http://localhost:4040/VOTER/form.html'></a>");
 		pw.close();
 }
 	
