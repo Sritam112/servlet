@@ -12,5 +12,22 @@
   <servlet-name>voter</servlet-name>
   <url-pattern>/voterurl</url-pattern>
   </servlet-mapping>
+
+  <filter>
+<filter-name>time</filter-name>
+  <filter-class>filters.nt.com.FiltersServlet</filter-class>
+  </filter>
+  <filter-mapping>
+  <filter-name>time</filter-name>
+  <url-pattern>/voterurl</url-pattern>
+  </filter-mapping>
+  <filter>
+  <filter-name>brsorFil</filter-name>
+  <filter-class>filters.nt.com.ChromeFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  <filter-name>brsorFil</filter-name>
+  <url-pattern>/voterurl</url-pattern>
+  </filter-mapping>
   
 </web-app>

@@ -1,9 +1,13 @@
 
+<script language="javaScript" src="js/validation.js">
+
+
+</script>
+
 <h1 style="color:red;text-align:center"> html to servlet communication  voter app</h1>
-<form action="voterurl"method="GET">
-parson name::<input type="text" name="pname"><br>
-p: age::<input type="text" name="page"><br>
-add::<input type="text" name="addr"><br>
+<form action="voterurl"method="GET" onsubmit="return validate(this)">
+parson name::<input type="text" name="pname"><span id="pnameErr"style="color:red"></span><br>
+p: age::<input type="text" name="page"><span id="pageErr"style="color:red"></span><br>
+add::<input type="text" name="addr"><span id="paddrsErr"style="color:red"></span><br>
 <input type="submit"value="register">
 </form>
-<!-- Write your comme http://localhost:3030/ -->
