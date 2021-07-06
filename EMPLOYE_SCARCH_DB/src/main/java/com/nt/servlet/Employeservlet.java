@@ -19,9 +19,6 @@ import javax.servlet.http.HttpServletResponse;
 public class Employeservlet extends HttpServlet {
 	private static final String Get_Emp_dit="SELECT EMPNO,EMPNAME,DEGINATION,SALARY  FROM EMPLOYE WHERE EMPNO=?";
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-		
-		
-		//get printwriter 
 		PrintWriter pw=res.getWriter();
 		res.setContentType("text/html");
 		int no=Integer.parseInt(req.getParameter("eno"));
