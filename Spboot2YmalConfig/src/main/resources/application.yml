@@ -1,0 +1,9 @@
+my:
+  app:
+    pid: 10
+    pcode: ABC
+    pcost: 200.0
+    models:
+    - RED
+    - GREEN
+    - BLUE
